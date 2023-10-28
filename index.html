@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="trading.png" >
+    <title>TRADING</title>
+     
+</head>
+<body>
+    <select id="option-menu" class="button">
+         <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+    </select>
+       
+    <select id="option-menu1"  class="button"></select>
+    <select id="option-menu2"  class="button">
+        <option value="option1">stagergy 1</option>
+        <option value="option2">stagergy 2</option>
+        <option value="option3">stagergy 3</option>
+        <option value="option4">-----</option>
+    </select>
+    <button id="prev-button" class="button1" onclick="changeOption(-1)">Prev</button>
+    <button id="next-button" class="button1" onclick="changeOption(1)">Next</button>
+    <div class="container">
+        <div class="top-container" >
+            <div class="div1" id="index">
+              <!-- Content of div 2 -->
+            </div>
+        
+            <div class="div4" id="fut">
+              <!-- Content of div 3 -->
+            </div>
+          </div>
+      
+        <div class="bottom-container">
+          <div class="div2" id="ce">
+            <!-- Content of div 2 -->
+          </div>
+      
+          <div class="div3" id="pe">
+            <!-- Content of div 3 -->
+          </div>
+        </div>
+      </div>
+   
+      
+ 
+</body>
+<script src="src/lib/lightweight-charts.standalone.production.js"></script>
+<script src="src/get_data/option_select.js"></script>
+<script src="src/statergy/value.js"></script>
+<script src="src/get_data/test.js"></script>
+<script src="src/get_data/get_data_from_csv.js"></script>
+<script src="src/display_chart/disply_chart_index.js"></script>
+<script src="src/display_chart/disply_chart_fut.js"></script>
+<script src="src/display_chart/disply_chart_ce.js"></script>
+<script src="src/display_chart/disply_chart_pe.js"></script>
+<script src="src/display_chart/info.js"></script>
+<script src="src/statergy/1.js"></script>
+ 
+
+ 
+</html>

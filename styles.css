@@ -1,0 +1,214 @@
+:root {
+  --default-width: 500px;
+  --default-height: 300px;
+}
+
+/* three */
+.container {
+    display: flex;
+    flex-direction: column;
+    /* height: 4500px; */
+    border: 1px solid black;
+  }
+  .top-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .div1, .div4 {
+    background-color: rgb(0, 0, 0);
+ 
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  .div1, .div4{
+    flex-grow: 1;
+    height: 520px;
+
+    border-right: 1px solid black;
+  }
+  
+  .bottom-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .custom-scroll-animation {
+    opacity: 1;
+    transform: translateY(60px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .custom-scroll-animation.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .div2, .div3 {
+    flex-grow: 1;
+    /* height: 1500px; */
+    color: aliceblue;
+    border-right: 1px solid black;
+  }
+   
+  .button{
+    /* Styles for the select element */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #3d3d3d;
+    border-radius: 4px;
+    width: 300px;
+    background-color: #1c1a1a    ;  
+    color:rgb(163, 200, 231);
+  }
+  
+  .button option {
+    /* Styles for the options within the select element */
+    padding: 8px;
+    font-size: 16px;
+    background-color: #1c1a1a     ;
+    color:rgb(163, 200, 231);
+  }
+  
+  .button:focus {
+    /* Styles when the select element is focused */
+    outline: none;
+    box-shadow: 0 0 5px #aaa;
+  }
+  
+   
+  body {
+    background-color: black;
+    width: 100%;
+    /* height: 300px; */
+  }
+   
+
+  .detail {
+    /* height: 200px; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 10px; 
+    list-style: none; 
+     
+    align-items: top;
+    justify-content: left;
+     
+    color: #b8b4b4;  
+  }/* Styles for the list items inside .detail container */
+  .detail li {
+    /* border: 1px solid #ccc;   */
+    padding: 2px;  
+  }
+ 
+  .detail .statistics-item {
+    /* border: 1px solid #948686; Adjust border properties as needed */
+    padding: 1px;  
+  }
+
+  .info-legend {
+    height: 100px;
+    width: 400px;
+  
+    color: #b8b4b4;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 10px; 
+    list-style: none; 
+    align-items: center;
+    justify-content: left;
+    z-index: 9999;
+    /* Add any other styles specific to the 'detail' class here */
+    position: absolute;
+    left: 10; /* Adjust this value to position the div */
+    top: 500; /* Adjust this value to position the div */
+     
+  }
+  .info-legend li {
+    /* border: 1px solid #ccc;   */
+    padding: 2px;  
+  }
+  
+ 
+ 
+ 
+  .button1 {
+    background-color: #222;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .button1:hover {
+    background-color: #333;
+    color: aliceblue;
+  }
+  
+  .button1:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #888;
+  }
+        
+  .button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .button2.active {
+    background-color: #f00;
+    color: #fff;
+  }  
+
+
+ 
+  .three-line-legend {
+    position:absolute;
+    display: block;
+    background-color: #fafafb;
+   
+    color: #ffffff;
+    padding: 4px;
+    font-size: 4px;
+    border-radius: 4px;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    color: aliceblue;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 6px 10px;
+    z-index: 99;
+    pointer-events: none;
+  }
+  
+  .red {
+    color: #ef5350; /* Red text color */
+    transition: color 0.3s ease; /* Transition effect for color change */
+  }
+  
+  .green {
+    color: #089981; /* Green text color */
+    transition: color 0.3s ease; /* Transition effect for color change */
+  }
+  
+
+
+/* Set the color of the scrollbar track */
+::-webkit-scrollbar {
+  width: 9px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; /* Set the background color of the scrollbar track */
+}
+
+/* Set the color of the scrollbar handle (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #1c829c73; /* Set the color of the scrollbar handle */
+}
